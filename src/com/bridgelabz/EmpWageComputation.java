@@ -27,7 +27,7 @@ class EmpWageComputation {
             System.out.println("daily Wages are : " + hour * wagePerHour);
             sum += hour * wagePerHour;
             j++;
-            maxHour += hour;
+            maximumHour += hour;
         }
         System.out.println("Total Wages of employee is :  " + sum);
 
