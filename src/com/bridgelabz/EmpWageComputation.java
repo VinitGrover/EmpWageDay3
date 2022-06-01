@@ -1,9 +1,10 @@
 package com.bridgelabz;
-import java.util.*;
 
 import java.util.*;
 
-class EmpWageComputation {
+import java.util.*;
+
+public class EmpWageComputation {
 
     static Scanner sc = new Scanner(System.in);
 
@@ -29,27 +30,10 @@ class EmpWageComputation {
             System.out.println("daily Wages are : " + hour * wagePerHour);
             sum += hour * wagePerHour;
             j++;
-            maxHour += hour;
+            maximumHour += hour;
         }
         System.out.println("Total Wages of employee is :  " + sum);
 
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Welcome to Employee Wage Computation program on Master Branch");
-        EmpWageComputation emp1 = new EmpWageComputation();
-
-        System.out.print("Enter Maximum working hours : ");
-        int maxHour = sc.nextInt();
-
-        System.out.print("Enter Maximum working days : ");
-        int maxDays = sc.nextInt();
-
-        System.out.print("Enter Employee Wage per hour : ");
-        int wagePerHour = sc.nextInt();
-
-
-        emp1.totalWage(maxDays, maxHour, wagePerHour);
     }
 }
 
