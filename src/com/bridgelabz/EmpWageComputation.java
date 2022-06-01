@@ -1,14 +1,19 @@
 package com.bridgelabz;
 import java.util.*;
 
+import java.util.*;
+
+
 class EmpWageComputation {
 
-    void totalWage(int i, int maxHour) {
+    static Scanner sc = new Scanner(System.in);
+
+    void totalWage(int maxDays, int maxHour, int wagePerHour) {
 
         Random randNum = new Random();
         int j = 0, hour = 0, sum = 0, maximumHour = 0;
 
-        while (j < i && maximumHour < maxHour) {
+        while (j < maxDays && maximumHour < maxHour) {
 
             int check = randNum.nextInt(3);
 
@@ -22,19 +27,13 @@ class EmpWageComputation {
                 default:
                     hour = 8;
             }
-            System.out.println("daily Wages are : " + hour * 20);
-            sum += hour * 20;
+            System.out.println("daily Wages are : " + hour * wagePerHour);
+            sum += hour * wagePerHour;
             j++;
-            maxHour += hour;
+            maximumHour += hour;
         }
-        System.out.println("Total Wages in 20 day period " + sum);
+        System.out.println("Total Wages of employee is :  " + sum);
 
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Welcome to Employee Wage Computation program on Master Branch");
-        EmpWageComputation emp1 = new EmpWageComputation();
-        emp1.totalWage(20, 100);
     }
 }
 
