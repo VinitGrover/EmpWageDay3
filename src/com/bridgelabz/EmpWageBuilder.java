@@ -1,14 +1,12 @@
 package com.bridgelabz;
 
-public class EmpWageBuilder {
+public class EmpWageBuilder extends EmpWageComputation {
 
-    public static void main(String[] args) {
+    void empWage() {
         System.out.println("Welcome to Employee Wage Computation program ");
 
         int maxHour, maxDays, wagePerHour;
 
-        EmpWageComputation emp1 = new EmpWageComputation();
-
         System.out.print("Enter Maximum working hours : ");
         maxHour = EmpWageComputation.sc.nextInt();
 
@@ -18,22 +16,7 @@ public class EmpWageBuilder {
         System.out.print("Enter Employee Wage per hour : ");
         wagePerHour = EmpWageComputation.sc.nextInt();
 
-        emp1.totalWage(maxDays, maxHour, wagePerHour);
-
-        System.out.println("Wage for different company started ");
-
-        EmpWageComputation emp2 = new EmpWageComputation();
-
-        System.out.print("Enter Maximum working hours : ");
-        maxHour = EmpWageComputation.sc.nextInt();
-
-        System.out.print("Enter Maximum working days : ");
-        maxDays = EmpWageComputation.sc.nextInt();
-
-        System.out.print("Enter Employee Wage per hour : ");
-        wagePerHour = EmpWageComputation.sc.nextInt();
-
-        emp2.totalWage(maxDays, maxHour, wagePerHour);
+        totalWage(maxDays, maxHour, wagePerHour);
 
     }
 }
