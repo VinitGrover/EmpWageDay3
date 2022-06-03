@@ -7,7 +7,8 @@ public class MultilpleCompany {
         EmpWageBuilder e1 = new EmpWageBuilder();
         e1.empWage();
 
-        ArrayList<EmpWageBuilder> a1 = new ArrayList();
-        a1.add(e1);
+        EmpWageBuilder array []= new EmpWageBuilder[1];
+        array[0]=e1;
+        
     }
 }

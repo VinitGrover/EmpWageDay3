@@ -1,9 +1,6 @@
 package com.bridgelabz;
 import java.util.*;
 
-import java.util.*;
-
-
 class EmpWageComputation {
 
     static Scanner sc = new Scanner(System.in);
