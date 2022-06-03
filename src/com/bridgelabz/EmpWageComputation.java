@@ -1,8 +1,6 @@
 package com.bridgelabz;
-import java.util.*;
 
 import java.util.*;
-
 
 class EmpWageComputation {
 
@@ -11,7 +9,7 @@ class EmpWageComputation {
     void totalWage(int maxDays, int maxHour, int wagePerHour) {
 
         Random randNum = new Random();
-        int j = 0, hour = 0, sum = 0, maximumHour = 0;
+        int j = 0, hour, sum = 0, maximumHour = 0;
 
         while (j < maxDays && maximumHour < maxHour) {
 
